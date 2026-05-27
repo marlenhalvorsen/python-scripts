@@ -1,7 +1,7 @@
 import os 
 import shutil
 
-folder = r"C:\Users\marle\Downloads" 
+folder = os.path.join(os.path.expanduser("~"), "Downloads")
 
 for file in os.listdir(folder):
     filepath = os.path.join(folder, file)
